@@ -41,7 +41,7 @@ const FacebookLogin = ({ disabled, onSuccess }) => {
     // Initialize FB SDK
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: "1974323309760162",
+        appId: "1334612180951751",
         autoLogAppEvents: true,
         xfbml: true,
         version: "v23.0",
@@ -109,7 +109,7 @@ const FacebookLogin = ({ disabled, onSuccess }) => {
   const launchWhatsAppSignup = () => {
     if (!window.FB) return console.warn("FB SDK not yet loaded");
     window.FB.login(fbLoginCallback, {
-      config_id: "3981920135430412",
+      config_id: "700908572907725",
       response_type: "code",
       override_default_response_type: true,
       extras: {
