@@ -41,6 +41,8 @@ import SubAdminPage from "./pages/crm/subAdmin/subAdminPage";
 import CreateSubAdmin from "./pages/crm/subAdmin/createSubAdmin";
 import CommunicationChannel from "./components/crm/BotManagement/CommunicationChannel";
 import WhatsappSettings from "./components/crm/WhatsappSettings/WhatsappSettings";
+import PrivacyPage from "./pages/landing/PrivacyPage";
+import TermsPage from "./pages/landing/TermsPage";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +62,8 @@ const App = () => (
             <Route path="/waitlist/:productKey" element={<WaitlistPage />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/onboarding" element={<OnboardingWizard />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
             <Route
               path="/onboarding/complete"
               element={<OnboardingComplete />}
